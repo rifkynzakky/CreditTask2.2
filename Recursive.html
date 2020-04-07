@@ -1,0 +1,24 @@
+<script>
+
+// Rekursiv
+var nomor = 0;
+document.write(panggil(nomor));
+
+function panggil(letter) {
+
+    if(letter<10) {
+        return letter + "," + panggil(letter + 1);
+    } else {
+        return letter;
+    }
+}
+
+// Looping
+document.write("<br> <br>");
+var no = 0;
+while(no < 10) {
+    document.write(no + ",");
+    no++;
+}
+
+</script>
